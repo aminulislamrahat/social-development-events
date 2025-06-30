@@ -37,7 +37,7 @@
   }
 }
 @plugin "daisyui" {
-  themes: all;
+  themes: light --default, dark --prefersdark, caramellatte, luxury;
   root: ":root";
   include: ;
   exclude: ;
