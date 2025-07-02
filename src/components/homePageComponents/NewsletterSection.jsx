@@ -2,9 +2,9 @@ import React from 'react';
 
 const NewsletterSection = () => {
     return (
-        <section className="px-4 md:px-12 lg:px-24 py-16 bg-base-100 text-base-content">
-            <div className="max-w-4xl mx-auto text-center bg-base-200 rounded-xl p-10 shadow-xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Subscribe to Our Newsletter</h2>
+        <section className="px-4 md:px-10 lg:px-36 py-16 bg-base-100 text-base-content">
+            <div className="max-w-full mx-auto text-center bg-base-200 rounded-xl p-20 shadow-xl">
+                <h2 className="text-4xl md:text-4xl font-bold text-primary mb-4">Subscribe to Our Newsletter</h2>
                 <p className="mb-6 text-lg">
                     Stay informed about upcoming events, new initiatives, and ways you can make an impact in your community.
                 </p>

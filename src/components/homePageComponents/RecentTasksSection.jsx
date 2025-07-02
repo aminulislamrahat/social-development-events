@@ -29,13 +29,13 @@ export default function RecentTasksSection() {
     }
 
     return (
-        <section className="bg-base-100 py-12 px-4 lg:px-24">
-            <div className="max-w-11/12 mx-auto bg-base-200 rounded-4xl p-6 lg:p-12">
+        <section className="bg-base-100 py-12 px-4 md:px-10 lg:px-36">
+            <div className="max-w-full mx-auto bg-base-200 rounded-4xl p-6 lg:p-12">
                 {/* Header */}
                 <Fade direction="down" triggerOnce>
                     <div className="text-center mb-20">
-                        <h2 className="text-5xl font-bold text-primary">Featured Tasks</h2>
-                        <p className="mt-6 max-w-3xl mx-auto text-2xl">
+                        <h2 className="text-4xl font-bold text-primary">Featured Tasks</h2>
+                        <p className="mt-6 max-w-3xl mx-auto text-lg">
                             Explore upcoming community-driven events happening soon. Don’t miss your chance to take part in meaningful actions that make a difference.
                         </p>
                     </div>
