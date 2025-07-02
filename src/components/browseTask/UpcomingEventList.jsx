@@ -13,7 +13,7 @@ export default function UpcomingEventList() {
     const [eventType, setEventType] = useState('');
     const [page, setPage] = useState(1);
 
-    const itemsPerPage = 6;
+    const itemsPerPage = 8;
     const { getUpcomingEvents } = useEventAPI();
 
     // Load events on filter or search
@@ -60,12 +60,12 @@ export default function UpcomingEventList() {
     if (loading) return <LoadingSpinner />;
 
     return (
-        <div className="min-h-screen bg-base-200 py-10 px-4 lg:px-24">
+        <div className="min-h-screen bg-base-200 py-10 px-4 md:px-10 lg:px-36">
             <title>Upcoming Events</title>
-            <h1 className="text-5xl font-bold text-center mb-10 text-primary">
+            <h1 className="text-4xl font-bold text-center mb-10 text-primary">
                 Upcoming Social Events
             </h1>
-            <p className="lg:text-2xl text-center max-w-6xl mx-auto mb-16">
+            <p className="lg:text-lg text-center max-w-6xl mx-auto mb-16">
                 Discover meaningful community events happening near you. Whether it's a cleanup, donation drive, or education workshop — explore upcoming opportunities to take part in building a better world.
             </p>
 
@@ -115,7 +115,7 @@ export default function UpcomingEventList() {
             {paginatedEvents.length === 0 ? (
                 <p className="text-center text-lg text-gray-500">No upcoming events found.</p>
             ) : (
-                <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {paginatedEvents.map((event, idx) => (
                         <Fade key={event._id} cascade damping={0.6} direction="left" delay={idx * 100}>
                             <ProjectCard task={event} />

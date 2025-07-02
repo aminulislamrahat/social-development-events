@@ -38,9 +38,9 @@ const MyJoinedEventList = () => {
     if (loading || !user) return <LoadingSpinner />;
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-20 min-h-[calc(100vh-400px)]">
+        <div className="max-w-full mx-auto px-4 md:px-10 lg:px-36 py-20 min-h-[calc(100vh-400px)]">
             <title>Joined Events</title>
-            <h2 className="text-3xl font-bold mb-6 text-center">My Joined Events</h2>
+            <h2 className="text-4xl font-bold mb-6 text-center">My Joined Events</h2>
 
 
 
@@ -48,7 +48,7 @@ const MyJoinedEventList = () => {
                 <p className="text-center text-lg">You haven’t Joined any events yet.</p>
             ) : (
                 <div className="overflow-x-auto">
-                    <table className="table w-full bg-base-300 rounded-4xl text-sm">
+                    <table className="table w-full bg-base-300 rounded-4xl text-lg">
                         <thead className="bg-base-200 text-base font-medium">
                             <tr>
                                 <th>Image</th>

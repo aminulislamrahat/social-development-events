@@ -92,7 +92,7 @@ export default function ProjectDetails() {
 
 
 
-            <div className="max-w-5xl mx-auto bg-base-100 shadow-lg rounded-4xl px-8 lg:px-20 py-8 space-y-6">
+            <div className="max-w-full mx-auto bg-base-100 shadow-lg rounded-4xl px-4 md:px-10 lg:px-36 py-8 space-y-6">
                 {/* Lottie Animation */}
                 <div className="w-full flex justify-center">
                     <div className="w-60 lg:w-96">
@@ -104,21 +104,21 @@ export default function ProjectDetails() {
                     <img
                         src={task?.thumbnail || "https://via.placeholder.com/400x300"}
                         alt={task.title}
-                        className="w-full md:w-1/2 h-64 object-cover rounded-2xl"
+                        className="w-full md:w-1/2 h-auto object-cover rounded-2xl"
                     />
 
                     <div className="flex-1 space-y-2 bg-base-300 p-8 rounded-2xl">
-                        <h1 className="text-3xl font-bold text-primary">{task.title}</h1>
-                        <p className="text-gray-500 text-sm">Event Type: <span className="font-medium">{task.eventType}</span></p>
-                        <p className="text-gray-500 text-sm">Location: <span className="font-medium">{task.location}</span></p>
-                        <p className="text-gray-500 text-sm">Event Date: <span className="font-medium">{new Date(task.eventDate).toLocaleDateString()}</span></p>
-                        <p className="text-gray-600 text-sm">Posted by: <span className="font-medium">{task.createdByUserName}</span></p>
+                        <h1 className="text-4xl font-bold text-primary">{task.title}</h1>
+                        <p className="text-gray-500 text-lg">Event Type: <span className="font-medium">{task.eventType}</span></p>
+                        <p className="text-gray-500 text-lg">Location: <span className="font-medium">{task.location}</span></p>
+                        <p className="text-gray-500 text-lg">Event Date: <span className="font-medium">{new Date(task.eventDate).toLocaleDateString()}</span></p>
+                        <p className="text-gray-600 text-lg">Posted by: <span className="font-medium">{task.createdByUserName}</span></p>
                     </div>
                 </div>
 
                 <div>
-                    <p className="text-lg font-medium mt-4 mb-2">Description:</p>
-                    <p className="text-gray-500 whitespace-pre-line">{task.description}</p>
+                    <p className="text-4xl font-medium mt-4 mb-2">Description:</p>
+                    <p className="text-gray-500 text-lg whitespace-pre-line">{task.description}</p>
                 </div>
 
                 <div className="text-center pt-4">

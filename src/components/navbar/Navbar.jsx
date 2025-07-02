@@ -56,6 +56,26 @@ export default function Navbar() {
                     >
                         Upcoming Events
                     </NavLink>
+                    <NavLink
+                        to='/terms-and-conditions'
+                        className={({ isActive }) =>
+                            isActive
+                                ? 'border-b-2'
+                                : 'cursor-pointer hover:text-primary transition-colors duration-200'
+                        }
+                    >
+                        Terms & Conditions
+                    </NavLink>
+                    <NavLink
+                        to='/privacy-policy'
+                        className={({ isActive }) =>
+                            isActive
+                                ? 'border-b-2'
+                                : 'cursor-pointer hover:text-primary transition-colors duration-200'
+                        }
+                    >
+                        Privacy Policy
+                    </NavLink>
                     {user ? (
                         // <>
                         //     <NavLink
